@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-width: 1200px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #151c22;
+    background-color: black;
+}
