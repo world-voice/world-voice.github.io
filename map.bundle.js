@@ -76,7 +76,13 @@ object-assign
     border: none;
     cursor: pointer;
 `,a=o.default(u)`
-    background-image: linear-gradient(319deg, #91d370 0%, #bca0ff 37%, #f2cd54 100%);
+    background-color: #663dff;
+    background: linear-gradient(
+        319deg,
+        rgb(86, 56, 195) 0%,
+        rgb(103, 50, 130) 37%,
+        rgb(185, 31, 127) 100%
+    );
 
     &:hover {
         background-color: #663dff;
@@ -86,6 +92,11 @@ object-assign
     &:active {
         background-color: #663dff;
         background-image: linear-gradient(319deg, #663dff 0%, #aa00ff 37%, #cc4499 100%);
+        box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+    }
+
+    @media (max-width: 768px) {
+        width: 80%;
     }
 `,l=o.default(u)`
     background: linear-gradient(rgb(239, 0, 0) 0%, rgb(31, 27, 25) 100%);
@@ -96,6 +107,11 @@ object-assign
     &:active {
         background: linear-gradient(rgb(25, 23, 23) 0%, rgb(245, 34, 5) 100%);
         box-shadow: inset 0 2px 2px rgba(172, 16, 0, 1);
+    }
+
+    @media (max-width: 768px) {
+        width: 80%;
+        margin-bottom: 30px;
     }
 `;t.ChangeButton=({changeColor:e,goBack:t})=>i.default.createElement(i.default.Fragment,null,i.default.createElement(l,{onClick:t},"Go Back"),i.default.createElement(a,{onClick:e},"Just Change"))},function(e,t,n){"use strict";var r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};Object.defineProperty(t,"__esModule",{value:!0}),t.Footer=void 0;const i=r(n(0)),o=r(n(1)).default.p`
     font-size: 100px;
